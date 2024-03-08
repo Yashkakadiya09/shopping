@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import Navbar from "../Navbar";
 import axios from "axios";
 import { useDispatch } from "react-redux";
 import {
   orderPlaced,
-  removeProduct,
+ 
 } from "../../features/cart/addProductslice";
 
 const Profile = () => {
@@ -490,7 +490,7 @@ const Profile = () => {
                                         height: "100%",
                                         maxWidth: "10vw",
                                         objectFit: "contain",
-                                        maxWidth: "100%",
+                                        
                                       }}
                                       src={data?.images[0]}
                                       alt=""

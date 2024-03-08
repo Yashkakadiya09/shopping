@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Navbar from "./Navbar";
 import {
@@ -67,7 +66,7 @@ const Cart = () => {
                           height: "100%",
                           maxWidth: "10vw",
                           objectFit: "contain",
-                          maxWidth: "100%",
+                          
                         }}
                         src={data?.images[0]}
                         alt=""
@@ -186,7 +185,7 @@ const Cart = () => {
                     <tr>
                       <td
                         title={data?.title}
-                        scope="row"
+                       
                         style={{
                           width: "10vw",
 

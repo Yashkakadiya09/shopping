@@ -16,7 +16,7 @@ import Furniture from "./Components/catogary/Furniture";
 import Shoes from "./Components/catogary/Shoes";
 import Clothes from "./Components/catogary/Clothes";
 import Miscellaneous from "./Components/catogary/Miscellaneous";
-import ScrollToTop from "./Components/Scroll";
+
 import { useEffect } from "react";
 
 function App() {

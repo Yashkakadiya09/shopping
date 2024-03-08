@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { orderPlaced } from "../features/cart/addProductslice";
-import { Link, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import tenorunscreen from "../Assets/tenor-unscreen.gif";
 import { toast } from "react-toastify";
 import axios from "axios";
@@ -43,7 +43,7 @@ const PaymentPage = () => {
     today = mm + "/" + dd + "/" + yyyy;
 
     try {
-      const res = await axios.post(
+       await axios.post(
         "https://654c6f6e77200d6ba858d7cc.mockapi.io/yash",
         {
           userid: user?.id,
