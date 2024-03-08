@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css"; // Import your existing CSS file
-import { Link } from "react-router-dom";
+
 
 const Footer = () => {
   return (
@@ -11,13 +11,13 @@ const Footer = () => {
             <h4>Company</h4>
             <ul>
               <li>
-                <a>About us</a>
+                <p>About us</p>
               </li>
               <li>
-                <a>Our services</a>
+                <p>Our services</p>
               </li>
               <li>
-                <a>Privacy policy</a>
+                <p>Privacy policy</p>
               </li>
             </ul>
           </div>
@@ -25,19 +25,19 @@ const Footer = () => {
             <h4>Get Help</h4>
             <ul>
               <li>
-                <a>FAQ</a>
+                <p>FAQ</p>
               </li>
               <li>
-                <a>Shipping</a>
+                <p>Shipping</p>
               </li>
               <li>
-                <a>Returns</a>
+                <p>Returns</p>
               </li>
               <li>
-                <a>Order status</a>
+                <p>Order status</p>
               </li>
               <li>
-                <a>Payment options</a>
+                <p>Payment options</p>
               </li>
             </ul>
           </div>
@@ -45,34 +45,34 @@ const Footer = () => {
             <h4>Online Shop</h4>
             <ul>
               <li>
-                <Link to={"/menwear"}>Mens</Link>
+                <p >Mens</p>
               </li>
               <li>
-                <Link to={"/womenwear"}>Womens</Link>
+                <p >Womens</p>
               </li>
               <li>
-                <Link to={"/jewelery"}>Jewellery </Link>
+                <p>Jewellery </p>
               </li>
               <li>
-                <Link to={"electronics"}>Electronics</Link>
+                <p >Electronics</p>
               </li>
             </ul>
           </div>
           <div className="footer-col">
             <h4>Follow Us</h4>
             <div className="social-links">
-              <a>
+              <p>
                 <i className="fab fa-facebook-f"></i>
-              </a>
-              <a>
+              </p>
+              <p>
                 <i className="fab fa-twitter"></i>
-              </a>
-              <a>
+              </p>
+              <p>
                 <i className="fab fa-instagram"></i>
-              </a>
-              <a>
+              </p>
+              <p>
                 <i className="fab fa-linkedin-in"></i>
-              </a>
+              </p>
             </div>
           </div>
         </div>
