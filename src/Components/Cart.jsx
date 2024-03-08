@@ -64,7 +64,7 @@ const Cart = () => {
                       <img
                         style={{
                           height: "100%",
-                          maxWidth: "10vw",
+                          maxWidth: "5vw",
                           objectFit: "contain",
                           
                         }}

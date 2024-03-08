@@ -15,7 +15,7 @@ const SingleProduct = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
   const cartitem = useSelector((state) => state?.cart?.cart);
-  const existProduct = cartitem?.filter((item, i) => id === item?.id);
+  const existProduct = cartitem?.filter((item, i) => id == item?.id);
 
   const notify = () => toast.success("Product Added to Cart");
   const getData = async () => {
@@ -23,7 +23,7 @@ const SingleProduct = () => {
       method: "GET",
       url: `https://65d888c7c96fbb24c1bbb9b4.mockapi.io/products`,
     }).then((Response) => {
-      const singleProduct = Response?.data.find((data, i) => data.id === id);
+      const singleProduct = Response?.data.find((data, i) => data.id == id);
 
       setProduct(singleProduct);
       setLoding(false);

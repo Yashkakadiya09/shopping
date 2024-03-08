@@ -17,17 +17,36 @@ import Shoes from "./Components/catogary/Shoes";
 import Clothes from "./Components/catogary/Clothes";
 import Miscellaneous from "./Components/catogary/Miscellaneous";
 
-import { useEffect } from "react";
+import ScrollToTop from "./ScrollToTop";
+import { useEffect, useState } from "react";
 
 function App() {
-  useEffect(() => {
-    window.history.scrollRestoration = 'manual'
-  }, []);
+  // const [user, setUser] = useState();
+
+  // const getUser = () => {
+  //   let responce = localStorage.getItem("user");
+  //   let data = JSON.parse(responce);
+
+  //   if (data) {
+  //     setUser(data);
+  //   }
+  // };
+  // useEffect(() => {
+  //   getUser();
+  // }, []);
+  // console.log(user);
+
+  // const ProtectedRoute = ({ children }) => {
+  //   if (!currentUser) {
+  //     return <Navigate to={"/login"} />;
+  //   }
+  //   return children;
+  // };
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
-       
           <Route exact path="/" element={<Login />}></Route>
           <Route exact path="/profile" element={<Profile />}></Route>
 

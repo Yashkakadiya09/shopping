@@ -4,10 +4,7 @@ import { toast } from "react-toastify";
 import Navbar from "../Navbar";
 import axios from "axios";
 import { useDispatch } from "react-redux";
-import {
-  orderPlaced,
- 
-} from "../../features/cart/addProductslice";
+import { orderPlaced } from "../../features/cart/addProductslice";
 
 const Profile = () => {
   const [user, setUser] = useState();
@@ -190,7 +187,10 @@ const Profile = () => {
                         <div className="d-flex justify-content-end mb-2 ">
                           <Link
                             to={"/"}
-                            onClick={() => dispatch(orderPlaced())}
+                            onClick={() => {
+                              dispatch(orderPlaced());
+                              localStorage.setItem("user", null);
+                            }}
                             className=" m-2 "
                             style={{
                               color: "black",
@@ -490,7 +490,6 @@ const Profile = () => {
                                         height: "100%",
                                         maxWidth: "10vw",
                                         objectFit: "contain",
-                                        
                                       }}
                                       src={data?.images[0]}
                                       alt=""
