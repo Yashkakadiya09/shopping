@@ -55,7 +55,7 @@ const Login = () => {
       <section
         id="login"
         style={{
-          height: "46.4vw",
+          height: "100vh",
           display: "flex",
           justifyContent: "center",
         }}
